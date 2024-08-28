@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee shop(order now)</title>
+    <link rel="icon" type="image/x-icon" href="./logo.coffec.jfif">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    width: 400px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.forgot-password {
+    font-size: 12px;
+    color: #007bff;
+    text-decoration: none;
+    float: right;
+    margin-top: -25px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff7300;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #ff5a00;
+}
+
+.social-login {
+    margin-top: 20px;
+}
+
+.social-login p {
+    margin: 10px 0;
+    color: #888;
+}
+
+.social-button {
+    width: 48%;
+    padding: 10px;
+    margin: 5px 1%;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+    color: white;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.google {
+    background-color: #db4437;
+}
+
+.social-button:hover {
+    opacity: 0.9;
+}
+
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login with Password</h2>
+        <form action="#" method="post">
+            <div class="input-group">
+                <label for="email">Phone Number or Email*</label>
+                <input type="text" id="email" name="email" placeholder="Please enter your Phone Number or Email">
+            </div>
+            <div class="input-group">
+                <label for="password">Password*</label>
+                <input type="password" id="password" name="password" placeholder="Please enter your password">
+                <a href="#" class="forgot-password">Forgot Password?</a>
+            </div>
+            <button type="submit" class="login-button">LOGIN</button>
+        </form>
+        <div class="social-login">
+            <p>Or, login with</p>
+            <button class="social-button facebook">Facebook</button>
+            <button class="social-button google">Google</button>
+        </div>
+    </div>
+</body>
+</html>
